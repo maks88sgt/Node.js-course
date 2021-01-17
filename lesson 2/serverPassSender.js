@@ -7,7 +7,7 @@ const options = {
     headers: {
         'Content-Type': 'application/json',
         IKnowYourSecret: 'TheOwlsAreNotWhatTheySeem ',
-        name: 'Sergey ',
+        name: 'Kate',
     }
 };
 
