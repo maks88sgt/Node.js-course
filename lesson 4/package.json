@@ -1,0 +1,19 @@
+{
+  "name": "lesson-4",
+  "version": "1.0.0",
+  "description": "server implements with mongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose"
+  ],
+  "author": "maks88sgt",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13"
+  }
+}
