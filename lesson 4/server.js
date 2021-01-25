@@ -13,6 +13,15 @@ async function readUsersFromDatabase(database) {
   return await database.find({});
 }
 
+const isNewUser = (userArr, user) => {
+  for (let item of userArr) {
+    if (item.name === user.name && item.ip === user.ip) {
+      return false;
+    }
+  }
+  return true;
+};
+
 app.use((request, response, next) => {
   if (request.url === '/favicon.ico') {
     return;
