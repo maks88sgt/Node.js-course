@@ -1,9 +1,9 @@
 const express = require('express');
 const passport = require('passport');
 const bodyParser = require('body-parser');
+
 const { welcomeAuthorizedUser } = require('./utils/welcomeAuthorizedUser');
 const { getUsersFromDatabase } = require('./database/getUsersFromDatabase');
-
 const { generateJWT } = require('./utils/generateJWT');
 const { bearerStrategy } = require('./strategies/bearerStrategy');
 const { localStrategy } = require('./strategies/localStrategy');

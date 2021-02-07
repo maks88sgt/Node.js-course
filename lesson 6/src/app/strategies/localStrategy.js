@@ -1,4 +1,5 @@
 const LocalStrategy = require('passport-local');
+
 const { authenticateUserByUsernameAndPassword } = require('../database/authenticateUserByUsernameAndPassword');
 
 const localStrategy = new LocalStrategy(

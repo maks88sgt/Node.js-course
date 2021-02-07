@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken');
 
+const { secret, tokenValidity } = require('../../config/config');
 const database = require('../database/database');
 const User = database.User;
-const { secret, tokenValidity } = require('../../config/config');
 
 async function generateJWT(user, done) {
   let token = jwt.sign(

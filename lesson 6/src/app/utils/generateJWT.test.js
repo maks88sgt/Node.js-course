@@ -2,7 +2,6 @@ const { generateJWT } = require('./generateJWT');
 const database = require('../database/database.js');
 
 jest.mock('../database/database.js');
-let token = 'qweqwerqerqerwerqr';
 let username = 'user_name@company.com';
 let password = 'user_name';
 let user = { username, password };
